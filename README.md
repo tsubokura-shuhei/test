@@ -1,1 +1,15 @@
-https://datadeliver.net/receiver/file_boxes/ab7a243e6aa74b7bb07222db39d6c425/rc/1f9eb971c4cd48798f27bb2b4077f44a
+
+{
+  "html": {
+    "indent_size": 0,
+    "unformatted": [
+      "svg",
+      "pre"
+    ],
+    "end_with_newline": false,
+    "preserve_newlines": false,
+    "max_preserve_newlines": 0,
+    "indent_inner_html": false,
+    "wrap_line_length": 0
+  }
+}
