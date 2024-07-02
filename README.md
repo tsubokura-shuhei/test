@@ -1,15 +1,30 @@
-
 {
-  "html": {
-    "indent_size": 0,
-    "unformatted": [
-      "svg",
-      "pre"
-    ],
-    "end_with_newline": false,
-    "preserve_newlines": false,
-    "max_preserve_newlines": 0,
-    "indent_inner_html": false,
-    "wrap_line_length": 0
-  }
+  "setting": [
+    {
+      "/index.html": { "isHome": true, "title": "メインページ" },
+      "/list.html": {
+        "isHome": false,
+        "title": "リストページ",
+        "items": ["red", "green", "yellow"]
+      },
+      "/about/index.html": {
+        "isHome": false,
+        "title": "Aboutページ",
+        "items": ["りんご", "メロン", "バナナ"]
+      }
+    }
+  ]
 }
+
+
+
+
+
+
+
+
+import data from "./src/js/json/seting.json" assert {type: 'json'}
+
+
+
+const pageData = data.setting[0]
