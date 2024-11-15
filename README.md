@@ -125,17 +125,17 @@ export default defineConfig({
       //ファイル出力設定
       output: {
         //ファイルを分けて書き出す際には「manualChunks」内で記述すること
-        manualChunks:(id) => {
+        manualChunks: (id) => {
           //CSSを分けて分けて書き出し
           const baseName = path.basename(id);
-          let fileType = baseName.split(".")[1]
+          let textBox = baseName.split(".");
+          let fileType = baseName.split(".")[textBox.length - 1];
 
-          if(fileType === "scss"){
-              if(id.includes('style.scss')) return "style"
-              if(id.includes('reset.scss')) return "reset"
-              if(id.includes('comon.scss')) return "comon"
+          if (fileType === "scss") {
+            if (id.includes("style.scss")) return `style`;
+            if (id.includes("reset.min.scss")) return `reset.min`;
+            if (id.includes("common.min.scss")) return `common.min`;
           }
-
         },
         //ファイルを圧縮して書き出す際には「assetFileNames」内で記述すること
         assetFileNames: (assetInfo) => {
